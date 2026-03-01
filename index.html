@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level 2+ Website</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    a {
+      display: inline-block;
+      margin-bottom: 30px;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #ffeb3b;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #ffffff;
+    }
+
+    /* TikTok-style Button */
+    .tiktok-btn {
+      padding: 15px 35px;
+      font-size: 1.2em;
+      cursor: pointer;
+      background: linear-gradient(45deg, #69C9D0, #EE1D52);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .tiktok-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .tiktok-btn::after {
+      content: '';
+      position: absolute;
+      width: 120%;
+      height: 0;
+      top: 0;
+      left: -10%;
+      background: rgba(255,255,255,0.3);
+      transform: rotate(45deg);
+      transition: all 0.5s ease;
+    }
+
+    .tiktok-btn:hover::after {
+      height: 300%;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Welcome Mustafa 🚀</h1>
+  <p>I am learning web development.</p>
+
+  <!-- Profile Image -->
+  <img src="https://i.ibb.co/KchkMzp6/image.png" alt="Profile Image">
+
+  <!-- Link -->
+  <a href="https://google.com" target="_blank">Visit Google</a>
+
+  <!-- TikTok Button -->
+  <button class="tiktok-btn" onclick="window.open('https://www.tiktok.com/@real_editor04?_r=1&_t=ZS-94Kp6tkt6B8', '_blank')">
+    Click Here
+  </button>
+
+</body>
+</html>
